@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="S Roucoulet">
+    <meta name="description" content="week 1 bio page">
+    <title>W1 Bio</title>
+
+    <style>
+
+        #title{
+            color: deepskyblue;
+        }
+
+        .hide{
+            display:none;
+        }
+
+        .subtitle{
+            color: blue;
+        }
+
+        #body{
+            background-color: rgb(218, 237, 253);
+        }
+
+        #oledpicdiv{
+            width: 700px;
+        }
+
+        #caption{
+            font-size: 12px;
+        }
+
+    </style>
+    
+</head>
+<body id="body">
+    <h1 id="title">Spencer Roucoulet</h1>
+    <hr>
+    <div id="nav">
+
+        <a href="#">Bio</a>
+        <a href="#">Schooling</a>
+        <a href="#">Hobbies</a>
+
+    </div><!--/nav-->
+
+    <hr>
+    
+    <div id="main">
+
+        <div id="bio">
+
+            <h2 class="subtitle">My Bio</h2>
+            
+            <img src="images/wdog.jpg" alt="me with my aunt and uncle's dog at christmas 2021">
+
+            <p>Hello! My name is Spencer. My birthday is October 4th and I'm from Bristol, CT. I grew up (and, when not at college, still live at) a house on a quiet hill with my parents and younger sister. My older brother and older sister used to live with us as well, but they have both since moved away to their own places with their significant others. As a little kid I had a sort of muted cheerfulness to me - super happy-go-lucky and oblivious, yet really quiet and very shy. Something "popped the bubble", so to speak, at the end of middle school, and throughout high school I mellowed out significantly in some respects and grew to be the person I am today - patient and kind, reserved and quiet, yet I do think I grew out of being shy - I believe there is a difference between reserved and shy. One of my friends calls me a "selective talker", because there is a significant difference between how I act with my close friends and how I act with everyone else.<br>I will do the rest later</p>
+
+            <hr>
+
+        </div><!--/bio-->
+
+        <div id="ed" class="hide">
+
+            <h2 class="subtitle">Schooling</h2>
+
+            <ul>
+                <li>O'Connell School</li>
+                <li>West Bristol School</li>
+                <li><a href="https://goodwin.cttech.org" target="_blank">E.C. Goodwin Tech</a></li>
+            </ul>
+
+            <hr>
+                     
+        </div><!--/ed-->
+
+        <div id="hobbies" class="hide">
+
+            <h2 class="subtitle">Hobbies/Interests</h2>
+            
+            <ol>
+                <li>Video games</li>
+                    <li><ul><li>My favorites are NieR: Automata and Triange Strategy!</li></ul></li>
+                <li>Reading</li>
+                <li>Pool</li>
+            </ol>
+
+            <div id="oledpicdiv"> <!--PUT IN HEADER STYLNG-->
+                <img id="oledpic" src="images/oled.png" alt="a nintendo switch OLED model with white joy-cons" style="width: 500px;">
+                <p id="caption"><em>Nintendo Switch OLED</em></p>
+            </div>
+
+            <hr>
+
+        </div><!--/hobbies-->
+
+        <div id="footer">
+
+            <p>©2022 Spencer Roucoulet | W1 Assignment</p>
+
+        </div><!--/footer-->
+
+    </div><!--/main-->
+
+    <hr>
+
+    <script>
+
+        var links = document.querySelectorAll(`a`)
+        var divs = document.querySelectorAll(`div`)
+        console.log(divs)
+    
+        links[0].addEventListener(`click`, (e)=>{
+            e.preventDefault()
+            divs[2].classList.remove(`hide`)
+            divs[3].classList.add(`hide`)
+            divs[4].classList.add(`hide`)  
+        })
+        
+        links[1].addEventListener(`click`, (e)=>{
+            e.preventDefault()
+            divs[2].classList.add(`hide`)
+            divs[3].classList.remove(`hide`)
+            divs[4].classList.add(`hide`)
+        })
+    
+        links[2].addEventListener(`click`, (e)=>{
+            e.preventDefault()
+            divs[2].classList.add(`hide`)
+            divs[3].classList.add(`hide`)
+            divs[4].classList.remove(`hide`)
+        })
+    
+    </script>
+
+</body>
+
+
+
+
+</html>
