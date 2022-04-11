@@ -1,0 +1,89 @@
+@font-face {
+    font-family: title;
+    src: url(fonts/MPLUS1-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: main_text;
+    src: url(fonts/AnekTelugu-Light.ttf);
+}
+
+#body{
+    background: rgb(230,230,230);
+    font-family: main_text;
+}
+
+
+#title{
+    color: rgb(222, 95, 95);
+    font-family: title;
+    text-align: center;
+}
+
+.hide{
+    display:none;
+}
+
+.subtitle{
+    color: rgb(204, 57, 57);
+    font-family: title;
+}
+
+
+#oledpic{
+    width: 500px;
+}
+
+#caption{
+    font-size: 12px;
+}
+
+a {
+    color: red;
+}
+
+a:visited{
+    color: rgb(102, 0, 0);
+}
+
+a:hover{
+    color: rgb(204, 57, 57);
+}
+
+.navlinks{
+    border: 1px solid black;
+    padding: 5px;
+    display:inline-block;
+    width: 100px;
+    text-align: center;
+    background-color: white;
+}
+
+.navlinks:hover{
+    background-color: red;
+    color: white;
+}
+
+#nav{
+    border-top: 1px solid rgb(102, 0, 0);
+    border-bottom: 1px solid rgb(102, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background: linear-gradient(90deg, rgba(230,230,230,1) 0%, rgba(223,180,180,1) 21%, rgba(223,180,180,1) 79%, rgba(230,230,230,1) 100%);
+}
+
+#footer{
+    border-top: 1px solid rgb(102, 0, 0);
+    border-bottom: 1px solid rgb(102, 0, 0);
+    text-align: center;
+    background: linear-gradient(90deg, rgba(230,230,230,1) 0%, rgba(223,180,180,1) 21%, rgba(223,180,180,1) 79%, rgba(230,230,230,1) 100%);}
+
+#wrapper{
+    margin: auto;
+    width: 1200px;
+    border: 1px solid rgb(92, 92, 92, .75);
+   
+    background-color: rgb(230,230,230);
+    padding: 10px;
+}
