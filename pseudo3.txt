@@ -1,0 +1,24 @@
+lab 3 pseudocode
+
+return, by ref
+
+static double dblvalidate(String strinput, Boolean ptest, Double dbloutput, ref flist)
+	do
+	{
+		strinput = Console.ReadLine();
+		ptest = Double.TryParse(strinput, out dbloutput)'
+		if (ptest == false)
+		{
+			Console.WriteLine("\nPlease enter a valid number.\n");
+		}
+	} while (ptest == false);
+
+	flist.Add(dbloutput);
+	
+	return dbloutput;
+
+static void buffer()
+	Console.WriteLine('\nPress any key to continue...");
+	Console.ReadKey();
+
+

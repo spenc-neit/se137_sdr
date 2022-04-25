@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="S Roucoulet">
+    <meta name="description" content="week 1 bio page">
+    <link rel="stylesheet" href="styles.css">
+    <title>W2 Bio</title>
+
+    
+</head>
+<body id="body">
+
+        <div id="titlediv">
+
+        <h1 id="title">Spencer Roucoulet</h1>
+
+        </div><!--/titlediv-->
+        <nav>
+
+            <a href="#" class="navlinks">Bio</a>
+            <a href="#" class="navlinks">Schooling</a>
+            <a href="#" class="navlinks">Hobbies</a>
+
+        </nav>
+
+        
+        <main>
+
+            <div id="bio">
+
+                <div id="bioheader">
+                <h2 class="subtitle">Bio</h2>
+                </div>
+                
+                <img id="me" src="images/wdog.jpg" alt="me with my aunt and uncle's dog at christmas 2021">
+                
+                <div id="paradiv">
+                <p>Hello! My name is Spencer. My birthday is October 4th and I'm from Bristol, CT. I grew up (and, when not at college, still live at) a house on a quiet hill with my parents and younger sister. My older brother and older sister used to live with us as well, but they have both since moved away to their own places with their significant others. As a little kid I had a sort of muted cheerfulness to me - super happy-go-lucky and oblivious, yet really quiet and very shy. Something "popped the bubble", so to speak, at the end of middle school, and throughout high school I mellowed out significantly in some respects and grew to be the person I am today - patient and kind, reserved and quiet, yet I do think I grew out of being shy - I believe there is a difference between reserved and shy. One of my friends calls me a "selective talker", because there is a significant difference between how I act with my close friends and how I act with everyone else.<br>Speaking of my friends, they are involved in the vast majority of my free time. Yes, I live in room 441, but most of the time you can find me in room 356 - the room of two of my friends. I am the unofficial third roommate, a title acknowledged by both of the official roommates. I spend so much time in there that, when one of them was talking to someone on the phone, I heard him refer to me and the other official roommate as simply "his roommates". I swear, last term I slept in that room more than one of the people paying for it. My friends and I play a lot of games together - both card and video - and I play a lot of games on my own, most commonly on my Switch. I met all of my current friends here by coincidence, but in my experience the friends you meet and keep through coincidence are usually the closest ones you will have.</p>
+                </div>
+
+            </div><!--/bio-->
+
+            <div id="ed" class="hide">
+
+                <div id="stitlediv">
+                    <h2>Schooling</h2>
+                </div> <!--/stitle-->
+
+                <div id="slist">
+                    <ul>
+                        <li>O'Connell School</li>
+                        <li>West Bristol School</li>
+                        <li><a href="https://goodwin.cttech.org" target="_blank">E.C. Goodwin Tech</a></li>
+                    </ul>
+                </div>
+
+                        
+            </div><!--/ed-->
+
+            <div id="hobbies" class="hide">
+
+                <div id="hdiv">
+
+                    <div id="htitlediv">
+                    <h2 id="hih2">Hobbies/Interests</h2>
+                    </div><!--htitlediv-->
+                    
+                    <div id="hlist">
+                        <ol>
+                            <li>Video games</li>
+                                <ul><li>My favorites are NieR: Automata and Triangle Strategy!</li></ul>
+                            <li>Reading</li>
+                            <li>Pool</li>
+                        </ol>
+                    </div><!--/hlist-->
+                
+
+                    
+
+                </div><!--hdiv-->
+
+               
+
+
+            </div><!--/hobbies-->
+
+            <div id="oledpicdiv">
+                <img id="oledpic" src="images/oled.png" alt="a nintendo switch OLED model with white joy-cons">
+            </div>
+
+            <footer>
+
+                <p>©2022 Spencer Roucoulet | Grid Bio Page Assignment</p>
+
+            </footer><!--/footer-->
+
+        </main>
+
+
+
+    <script>
+
+        var links = document.querySelectorAll(`a`)
+        var divs = document.querySelectorAll(`div`)
+        console.log(divs)
+    
+        links[0].addEventListener(`click`, (e)=>{
+            e.preventDefault()
+            divs[2].classList.remove(`hide`)
+            divs[3].classList.add(`hide`)
+            divs[4].classList.add(`hide`)  
+        })
+        
+        links[1].addEventListener(`click`, (e)=>{
+            e.preventDefault()
+            divs[2].classList.add(`hide`)
+            divs[3].classList.remove(`hide`)
+            divs[4].classList.add(`hide`)
+        })
+    
+        links[2].addEventListener(`click`, (e)=>{
+            e.preventDefault()
+            divs[2].classList.add(`hide`)
+            divs[3].classList.add(`hide`)
+            divs[4].classList.remove(`hide`)
+        })
+    
+    </script>
+
+</body>
+
+
+
+
+</html>

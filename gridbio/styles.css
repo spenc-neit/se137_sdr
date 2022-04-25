@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    display:none;
+}
+
+html{
+    margin: 0%;
+    padding: 0;
+    background-color: #c2c2ff;
+}
+
+@font-face {
+    font-family: title;
+    src: url(fonts/MPLUS1-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: main_text;
+    src: url(fonts/AnekTelugu-Light.ttf);
+}
+
+#me{
+    display: none;
+}
+
+main{
+    display:grid;
+    margin-top: 22px;
+    grid-template-areas: "bio bio bio"
+                         "hob nsw edu"
+                         "fot fot fot";
+    background-color: #80A1F5;
+    color: white;
+    font-family: main_text;
+}
+
+#hobbies{
+    height: 350px;
+    background-color: #6A6AFF;
+    padding-top: 28px;
+    padding-left: 20px;
+}
+
+#bioheader{
+    background-color: #3D50FF;
+    height: 53px;
+    font-size: 20px;
+    padding-left: 13px;
+    font-size: 20px;
+}
+
+#bio{
+    grid-area:bio;
+    background-color: #6A6AFF;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    padding: 0 13px 0 13px;
+    width: 1904px;
+    
+}
+
+#ed{
+    grid-area:edu;
+    width: 606px;
+    background-color: #6A6AFF;
+    padding:28px 20px 28px 20px;
+    margin-left: 20px;
+}
+
+
+#title{
+    padding: 0;
+    margin-left:14px;
+    font-family: title;
+    line-height: 35px;
+}
+
+#titlediv{
+    display: flex;
+    width: 100%;
+    background-color: #80A1F5;
+    align-content: center;
+    height: 82px;
+}
+
+h2{
+    margin: 0;
+    height: 53px;
+    line-height: 53px;
+}
+
+.subtitle{
+    margin-top: 40px;
+    line-height: 53px;
+
+}
+
+#paradiv{
+    background-color: #3D50FF;
+    margin-top: 17px;
+    padding: 15px 13px 15px 13px;
+    margin-bottom: 28px;
+}
+
+#hdiv{
+    grid-area: hob;
+    width: 629px;
+    margin: 0;
+}
+
+#htitlediv{
+    margin-bottom: 14px;
+}
+
+#hlist, #slist{
+    margin-right: 0;
+    background-color: #3D50FF;
+    height: 188px;
+    padding-top: 15px;
+    padding-left: 13px;
+}
+
+#oledpicdiv{
+    background-color: #6A6AFF;
+    grid-area: nsw;
+    padding:28px 13px 28px 13px;
+    width: 629px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+#oledpic{
+    width: 425px;
+    background-color: #3D50FF;
+    padding: 5px;
+    height: 255px;
+}
+
+#hih2{
+    line-height: 53px;
+    background-color: #3D50FF;
+    padding-left: 13px;
+
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    grid-area: fot;
+    color: black;
+    text-decoration: bold;
+}
+
+#stitlediv{
+    background-color: #3D50FF;
+    margin-bottom: 14px;
+    height: 53px;
+    padding-left: 13px;
+}

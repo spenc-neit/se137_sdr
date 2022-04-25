@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+/*forces the specified height and width! use this all the time to keep track of your pixels!*/
+
+
+div:first-child{
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+    padding: 20px 10px 20px 10px;
+    /*T R B L*/
+    /*clockwise!*/
+    border:5px solid black;
+    margin: 40px; /*around the outside of the element*/
+    /*padding, borders, and margins add to width and height!*/
+
+}
+
+main{
+    border: 1px solid black;
+    display:grid;
+    grid-template-areas: 'hed hed hed hed'
+                         'nav nav nav nav'
+                         'sec sec sec sec'
+                         'fot fot fot fot';
+}
+
+header{
+    background-color: palegoldenrod;
+    grid-area: hed;
+}
+
+nav{
+    background-color: palegreen;
+    grid-area: nav;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background-color: palevioletred;
+    grid-area: fot;
+}
+
+section{
+    min-height: 300px;
+    background-color: paleturquoise;
+    grid-area: sec;
+}

@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin:0;
+    height: 100%;
+    background-color: #efefef;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main{
+    background-color: #cfcfcf;
+    width: 80%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+i{
+    font-size: 2em;
+    margin: 0 10px 0 10px;
+}
+
+main{
+    padding: 0 20px 0 20px;
+}
+
