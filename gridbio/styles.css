@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    font-family: inter;
+    font-weight: normal;
 }
 
 nav{
@@ -12,14 +14,9 @@ html{
     background-color: #c2c2ff;
 }
 
-@font-face {
-    font-family: title;
-    src: url(fonts/MPLUS1-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: main_text;
-    src: url(fonts/AnekTelugu-Light.ttf);
+@font-face{
+    font-family: inter;
+    src: url(fonts/Inter-Regular.ttf)
 }
 
 #me{
@@ -34,7 +31,6 @@ main{
                          "fot fot fot";
     background-color: #80A1F5;
     color: white;
-    font-family: main_text;
 }
 
 #hobbies{
@@ -58,13 +54,11 @@ main{
     margin-top: 28px;
     margin-bottom: 28px;
     padding: 0 13px 0 13px;
-    width: 1904px;
     
 }
 
 #ed{
     grid-area:edu;
-    width: 606px;
     background-color: #6A6AFF;
     padding:28px 20px 28px 20px;
     margin-left: 20px;
@@ -73,9 +67,12 @@ main{
 
 #title{
     padding: 0;
-    margin-left:14px;
-    font-family: title;
-    line-height: 35px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin:13px 0 0 14px;
 }
 
 #titlediv{
@@ -107,7 +104,6 @@ h2{
 
 #hdiv{
     grid-area: hob;
-    width: 629px;
     margin: 0;
 }
 
@@ -127,14 +123,12 @@ h2{
     background-color: #6A6AFF;
     grid-area: nsw;
     padding:28px 13px 28px 13px;
-    width: 629px;
     height: 350px;
     display: flex;
     justify-content: center;
 }
 
 #oledpic{
-    width: 425px;
     background-color: #3D50FF;
     padding: 5px;
     height: 255px;
@@ -148,12 +142,13 @@ h2{
 }
 
 footer{
+    background-color: #c2c2ff;
     display: flex;
     width: 100%;
     justify-content: center;
     grid-area: fot;
     color: black;
-    text-decoration: bold;
+    margin-top: 20px;
 }
 
 #stitlediv{
@@ -161,4 +156,12 @@ footer{
     margin-bottom: 14px;
     height: 53px;
     padding-left: 13px;
+}
+
+footer p{
+    text-align: center;
+    width: 100%;
+    background-color: #80A1F5;
+    height: 30px;
+    line-height: 30px;
 }
