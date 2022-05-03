@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: teko;
+    src: url(fonts/Teko-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: rocksalt;
+    src: url(fonts/RockSalt-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: teko_bold;
+    src: url(fonts/Teko-Bold.ttf);
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+}
+
+header{
+    background-color: black;
+    color: red;
+    height: 100px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+i{
+    font-size: 60px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
+h1{  
+    height:50px;
+    line-height: 50px;
+    font-family: teko;
+    font-size:48px;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+#left, #middle{
+    height: 481px;
+}
+
+#left, #middle, #right{
+    color:white;
+}
+
+main{
+    display: grid;
+    grid-template-areas: "ban ban ban ban rit"
+                         "lef lef mid mid rit";
+    column-gap: 20px;
+    row-gap: 25px;
+    background-color: #282828;
+}
+
+#jason{
+    grid-area: ban;
+    background-color: #393939;
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 388px;
+}
+
+#left{
+    grid-area: lef;
+    background-color: #393939;
+    border-top: 5px solid red;
+    display: flex;
+    margin-left: 20px;
+}
+
+#middle{
+    grid-area: mid;
+    background-color: #393939;
+    border-top: 5px solid red;
+    padding: 19px 24px 0 24px;
+}
+
+#right{
+    grid-area: rit;
+    background-color: #393939;
+    padding-top: 25px;
+    padding-left: 17px;
+}
+
+#ritp{
+    margin: 31px 41px 24px 27px;
+    height: 385px;
+}
+
+
+#cover{
+    height: 478px;
+
+}
+
+#dvd{
+    height: 148px;
+}
+
+#pennant{
+    height: 229px;
+}
+
+#sign{
+    height: 254px;
+    margin-left: 40px;
+}
+
+#underwater{
+    height: 170px;
+    margin-bottom: 28px;
+}
+
+h2{
+    font-family: rocksalt;
+    color: #FF1D29;
+    border-bottom: 4px solid red;
+    margin-left: 23px;
+    margin-right: 12px;
+    text-align: center;
+    margin-bottom: 0;   
+}
+
+#right p{
+    width: 275px;
+    font-family: roboto;
+}
+
+#middle p{
+    font-family: poppins;
+    font-size: 24px;
+
+}
+
+#left p{
+    font-size: 18px;
+    font-family: poppins;
+    margin-left: 19px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+#left_btm{
+    display: flex;
+    margin-left: 19px;
+    margin-bottom: 10px;
+}
+
+#left_br{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 23px;
+}
+
+#left_br p{
+    margin: 0;
+    font-family: teko_bold;
+    font-size:72px;
+    text-decoration: underline;
+}
+
+#left_br a{
+    color: #22C1CB;
+    font-family: poppins;
+}
+
+footer{
+    background-color: black;
+    height:60px;
+    padding: 21px 0 0 30px
+}
+
+footer p{
+    font-family: teko;
+    color: #BCBCBC;
+    font-size: 12px;
+    height: 17px;
+    margin:0;
+}

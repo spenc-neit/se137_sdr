@@ -1,0 +1,103 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+main{
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: aquamarine;
+}
+
+section{
+height: 100%;
+background-color: burlywood;
+display: flex;
+}
+
+footer{
+    height: 16px;
+    background-color: blue;
+}
+
+aside{
+    width: 50px;
+    background-color: cornsilk;
+}
+
+nav{
+    width: 150px;
+    background-color: darkkhaki;
+    transition: width 1s;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+#content{
+    width: 100%;
+    background-color: indianred;
+    display: flex;
+    flex-direction: column;
+}
+
+#tabs{
+background-color: lightblue;
+}
+
+#tabs a{
+    width: 100px;
+    height: 40px;
+    display: inline-flex;
+}
+
+#tabs a:link, #tabs a:visited{
+    background-color: orange;
+}
+
+#tabs a:active, #tabs a:hover{
+    background-color: rgb(101, 105, 97);
+} 
+
+#breadcrumbs{
+background-color: darkcyan;
+}
+
+textarea{
+    resize: none;
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background-color: black;
+    color:white;
+    overflow-y: scroll;
+}
+
+.hidden{
+    width: 0;
+    padding: 0;
+    transition:width 1s;
+}
+
+details{
+    margin: 5px;
+    width: 90px;
+}
+
+summary{
+    width:90px;
+}
