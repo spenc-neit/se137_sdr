@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: inter;
+    src: url(fonts/Inter-Regular.ttf);
+}
+
+*{
+    font-family: inter;
+}
+
+html, body{
+    margin:0;
+    height:100vh;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    width:80%;
+    border-collapse: collapse;
+}
+
+td{
+    border-bottom:1px solid black;
+}
+
+
+@media (max-width:1920px){
+    html{
+        background-color: darkseagreen;
+    }
+    h1{
+        font-size:1.5rem;
+        border-bottom: 3px solid seagreen;
+    }
+
+    thead{
+        font-size: 1rem;
+        background-color: seagreen;
+        color: white;
+    }
+
+    tbody{
+        font-size: 1rem;
+    }
+
+    thead tr:last-child{
+        display: none;
+    }
+
+    thead tr:first-child{
+        display: table-row;
+    }
+}
+
+@media (max-width:1000px){
+    
+    html{
+        background-color: blanchedalmond;
+    }
+
+    thead{
+        font-size: 1rem;
+        background-color: peru;
+        color: white;
+    }
+
+    thead tr:first-child{
+        display: none;
+    }
+    thead tr:last-child{
+        display: table-row;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        border-bottom: 3px solid peru;
+    }
+
+}
+
+@media (max-width:500px){
+    .stat{
+        display: none;
+    }
+
+    h1{
+        font-size: 2rem;
+        border-bottom: 3px solid darkred;
+    }
+
+    thead{
+        font-size: 1.5rem;
+        background-color: darkred;
+        color: white;
+    }
+
+    tr{
+        font-size: 1.25rem;
+    }
+
+    html{
+        background-color: indianred;
+    }
+}
